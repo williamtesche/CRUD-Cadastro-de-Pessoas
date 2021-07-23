@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+    --color1: #32B292;
+    --color1-1: #3bcfaa;
+    --color2: #757580;
+    --color3: #93939e;
+    --color4: #23232E;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  font-family: Roboto;
+}
+
+body {
+  background-image: linear-gradient(to right, var(--color2), var(--color3));
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+    font-size: 1rem;
+    margin-bottom: .2rem;
+}
+
+h2 {
+    font-size: .7rem;
+    color: rgba(255, 255, 255, .5);
+    margin-bottom: .5rem;
+}
+
+input, button {
+    border: none;
+    padding: .5rem .8rem;
+    border-radius: 1rem;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+a {
+    color: var(--color1);
+    transition: .2s;
+}
+a:hover {
+    color: var(--color1-1);
+}
+
+#container {
+  margin: 1rem;
+  border-radius: 1.3rem;
+  padding: 0.5rem;
+  background: white;
+  width: 100%;
+  max-width: 300px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+}
+
+#inner-container {
+  border-radius: 1rem;
+  background: var(--color4);
+  color: white;
+  overflow: hidden;
+}
+
+header {
+    background: var(--color1);
+    padding: 1.6rem 1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+ul {
+    padding:0;
+    list-style: none;
+}
+li {
+    /* background: var(--color2); */
+    color: white;
+    margin-bottom: 0.5rem;
+    display: flex;
+    border-left: 2px solid var(--color1);
+}
+
+li > * {
+    flex: 0;
+}
+li > h3 {
+    flex: auto;
+    padding-left: .5rem;
+}
+li > a {
+    padding: 0 .2rem;
+    text-decoration: none;
+}
+
+form input, form button {
+    width: 100%;
+}
+
+form input {
+    margin-bottom: .5rem;
+}
+
+form button {
+    background: var(--color1);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background: var(--color1-1);
+}
