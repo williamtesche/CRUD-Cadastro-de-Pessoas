@@ -3,10 +3,10 @@
 // conectando com o banco
 include("bootstrap.php");
 
-//include_once "editar.php";
+// include_once "editar.php";
 $nome = $_POST['nome']; 
 $id = $_GET['id'];
- //print_r($nome);
+ print_r($nome);
 // die();
 
 //editar pessoa do banco de dados 
@@ -19,7 +19,7 @@ mysqli_query($conn,$sql);
 mysqli_close($conn);
 
 // mensagem de sucesso!
-echo "pessoa atualizada com sucesso!<br>";
+echo "pessoa atualizada com sucesso!";
 ?>
  <!DOCTYPE html>
  <html lang="en">

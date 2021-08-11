@@ -17,7 +17,8 @@ mysqli_query($conn,$sql);
 mysqli_close($conn);
 
 // envia mensagem de sucesso
-//  echo "Nova pessoa foi salva!";
+echo "pessoa atualizada com sucesso!<br>";
+echo "Nova pessoa foi salva!";
 ?>
 <!DOCTYPE html>
 <html lang= "en">

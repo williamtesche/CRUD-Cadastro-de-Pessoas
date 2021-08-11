@@ -14,7 +14,7 @@ include("bootstrap.php");
  $sql = "SELECT id, nome FROM pessoas ORDER BY id DESC";
 
 // executa a query
- $result = mysqli_query($conn, $sql);
+ $result = mysqli_query($conn,$sql);
 
 // converter o resultado para um array simpático de pessoas (esta é a parte foda)
 $pessoas = [];
@@ -40,7 +40,7 @@ mysqli_close($conn);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylo.css">
-    <title>CRUD em 2 meses</title>
+    <title>CRUD!</title>
 </head>
 
 <body>

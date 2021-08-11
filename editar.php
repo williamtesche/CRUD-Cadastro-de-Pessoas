@@ -1,15 +1,17 @@
 <?php
- // conectando com o banco
 
+ // conectando com o banco
+ 
 include("bootstrap.php");
 
-// $nome = $_GET['nome'];
+$nome = $_GET['nome'];
  $id = $_GET['id'];
  $sql = "SELECT * FROM pessoas where id = $id";
  $result = mysqli_query($conn, $sql);
  $linha = mysqli_fetch_assoc($result);
  
-//  print_r($nome);
+ print_r($nome);
+
 
 ?>
 <!DOCTYPE html>
