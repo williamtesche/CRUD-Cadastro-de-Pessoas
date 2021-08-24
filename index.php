@@ -1,7 +1,7 @@
 <?php 
 include("bootstrap.php");
 
-// muito dificil fica pra dps 
+
 //   if ($_POST){
 //     $nome = $_POST['nome'];
 //      $id = $_POST['id'];
@@ -11,10 +11,10 @@ include("bootstrap.php");
 
 
 // preparar query para salvar
- $sql = "SELECT id, nome FROM pessoas ORDER BY id DESC";
+$sql = "SELECT id, nome FROM pessoas ORDER BY id DESC";
 
 // executa a query
- $result = mysqli_query($conn,$sql);
+$result = mysqli_query($conn,$sql);
 
 // converter o resultado para um array simpático de pessoas (esta é a parte foda)
 $pessoas = [];
@@ -62,7 +62,7 @@ mysqli_close($conn);
                     $i = 0;
                     while ($i < sizeof($pessoas)) {
                         $p = $pessoas[$i];
-                         include("li.php");
+                        include("li.php");
                         $i++;
                     }
                     ?>

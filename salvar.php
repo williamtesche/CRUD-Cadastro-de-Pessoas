@@ -7,7 +7,7 @@ include("bootstrap.php");
 $nome = $_POST["nome"];
 
 // preparar query para salvar
-$sql = "INSERT INTO  pessoas(nome) VALUES ('${nome}')";
+$sql = "INSERT INTO `pessoas`(`id`, `nome`) VALUES ($id,$nome)";
 
 // executa a query
 mysqli_query($conn,$sql);
