@@ -55,9 +55,9 @@ mysqli_close($conn);
 
             <main>
 
-                <h2>Listagem de pessoas usando WHILE</h2>
+                <!-- <h2>Listagem de pessoas usando WHILE</h2> -->
 
-                <ul>
+                <!-- <ul>
                     <?php
                     $i = 0;
                     while ($i < sizeof($pessoas)) {
@@ -71,13 +71,13 @@ mysqli_close($conn);
                 </ul>
 
                 <h2>Listagem de pessoas usando FOR</h2>
-                <ul>
-                    <?php
+                
+                 <?php
                     for ($i = 0; $i < sizeof($pessoas); $i++) {
                         $p = $pessoas[$i];
                         include("li.php");
                     }?>
-                </ul>
+                </ul> -->
 
 
                 <h2>Listagem de pessoas usando FOREACH</h2>
@@ -92,7 +92,7 @@ mysqli_close($conn);
                 <h2>Nova pessoa</h2>
                 <form action="/salvar.php" method="POST">
                     <input type="text" name="nome" placeholder="Nome da nova pessoa">
-                    <button type="salvar">salvar</button>
+                    <button type="submit">salvar</button>
                 </form>
             </main>
 

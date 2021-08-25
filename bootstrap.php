@@ -7,17 +7,21 @@ error_reporting(E_ALL);
 
 // conecta no banco
 $host =  "localhost";
-$port = 8880;
-$user = "william_willian"; 
-$pass = "v&h]BtTAAAvZ";
+$user = "user1"; 
+$pass = "123";
 $base = "william_crud";
 
-$conn = mysqli_connect($host,$user,$pass,$base, $port);
-
+//$conn = mysqli_connect($host,$user,$pass,$base);
+if($conn = new mysqli($host,$user,$pass,$base)){
+   // echo "Conectado!";
+}else{
+    echo "Erro!";
+}
 // if (!$conn) {
 //     die("Connection failed: " . mysqli_connect_error());
 // }
 // echo "Connected successfully";
+// 
 ?>
 
 

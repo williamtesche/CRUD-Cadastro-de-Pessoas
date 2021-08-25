@@ -7,18 +7,21 @@ include("bootstrap.php");
 $nome = $_POST["nome"];
 
 // preparar query para salvar
-$sql = "INSERT INTO `pessoas`(`id`, `nome`) VALUES ($id,$nome)";
+$sql = "INSERT INTO `pessoas`( `nome`) VALUES ('$nome')";
 
 // executa a query
-mysqli_query($conn,$sql);
+if (mysqli_query($conn, $sql)) {
+    echo "$nome cadastrado com sucesso!", 'success';
+} else
+    echo "$nome Não foi cadastrado", 'danger';
+
+
 
 
 // desconecta do banco
 mysqli_close($conn);
 
 // envia mensagem de sucesso
-echo "pessoa atualizada com sucesso!<br>";
-echo "Nova pessoa foi salva!";
 ?>
 <!DOCTYPE html>
 <html lang= "en">
@@ -30,7 +33,7 @@ echo "Nova pessoa foi salva!";
     <title>Document</title>
 </head>
 <body>
-<a href="/index.php">Nome da pessoa que foi salva <?=$nome?>!</a>
+<a href="/index.php">Voltar</a>
 
 </body>
 </html>
