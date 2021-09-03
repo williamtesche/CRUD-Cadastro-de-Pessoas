@@ -2,13 +2,6 @@
 include("bootstrap.php");
 
 
-//   if ($_POST){
-//     $nome = $_POST['nome'];
-//      $id = $_POST['id'];
-//     $sql = "INSERT INTO (nome,id) VALUES ('${nome}','${id}')";
-
-//  }
-
 
 // preparar query para salvar
 $sql = "SELECT id, nome FROM pessoas ORDER BY id DESC";
